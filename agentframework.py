@@ -5,8 +5,9 @@ Created on Tue Apr 13 08:35:43 2021
 @author: laura
 """
 
-"""Creates an Agent class which generates the agents in a random location, 
-and moves them within the agent class"""
+"""Creates an Agent class which generates the agents, and subsequently 
+moves them, enables them to eat the environment, and share their 
+co-ordinates with other agents within the agent class"""
 
 import random
 
