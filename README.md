@@ -10,3 +10,6 @@ The second file is in.txt. This contains the numbers used for the x and y co-ord
 
 The thrid file is model.py. This file creates the agents and their environment, and enables the agents to move within the environment. The code also creates a window with an 
 animated figure depicting the agents' locations within the environment. The file will generate a run time and produce the agents' initial and final co-ordinates and store values.
+
+
+Download the three files to the same directory and run the model.py file to create the agent based model.
