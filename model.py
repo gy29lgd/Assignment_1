@@ -38,7 +38,7 @@ random.seed(4)
 #Read in csv file by: reading in the in.text file and convert it into a 
 #csv file, this generates raster data by creating a list of lists
 environment = []                #make empty list called 'environment'
-f = open('in.txt', newline='') 
+f = open('in.txt', newline='')  #open the file and call it f, adding spaces 
 reader = csv.reader(f, quoting=csv.QUOTE_NONNUMERIC)
 for row in reader:
     rowlist = []                #make second empty list called 'rowlist'				
@@ -110,7 +110,8 @@ agents.append(agentframework.Agent(i, environment, agents, 50, 50))
 i = i + 1
 #Below prints co-ordinates for another agent with known co-ordinates
 agents.append(agentframework.Agent(i, environment, agents, 51, 51))
-print("num_of_agents", num_of_agents)   #prints agents with co-ordinates from data.html
+print("num_of_agents", num_of_agents)   #prints agents with co-ordinates from 
+                                        #data.html
 
 num_of_agents = len(agents)
 print("num_of_agents", num_of_agents)   #prints total number of agents
@@ -141,7 +142,8 @@ def update(frame_number):
 
     Returns
     -------
-    None.
+    Figure showing the agents moving within the environment and interacting
+    with it.
 
     """
     
@@ -231,7 +233,7 @@ def wait_fig():
         matplotlib.pyplot.show(block=False)
     else:      
         matplotlib.pyplot.show(block=False)
-    matplotlib.pyplot.close()
+    matplotlib.pyplot.close()   #close the figure window
     return    
 
 

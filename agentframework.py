@@ -19,7 +19,7 @@ class Agent():
     #Create an object inside the function
     def __init__ (self, i, environment, agents, x, y):
         """
-        This sets up the agents 
+       Sets up the agents. 
 
         Parameters
         ----------
@@ -36,7 +36,7 @@ class Agent():
 
         Returns
         -------
-        None.
+        The agents name, x and y co-ordinates, and the store value.
 
         """
         self.i = i
@@ -78,7 +78,8 @@ class Agent():
 
         Returns
         -------
-        None.
+        States whether or not agents are within the neighbourhood of another 
+        agent using the print statements.
 
         """
         for i in range(len(self.agents)):
@@ -105,7 +106,7 @@ class Agent():
 
         Returns
         -------
-        None.
+        Agent co-ordinates which are within the environment.
 
         """
         
@@ -131,7 +132,7 @@ class Agent():
 
         Returns
         -------
-        None.
+        The amount of environment consumed by an agent.
 
         """
         if self.environment[self.y][self.x] > 10:
